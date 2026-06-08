@@ -1,0 +1,17 @@
+# -----------------------------------------------------------------------------
+# _data/members.yml
+# IDMM Lab members.
+# -----------------------------------------------------------------------------
+
+grad_students: []
+undergrads: []
+alumni: []
+
+# 실제 멤버 들어오면 위 빈 배열([]) 대신 아래 형식으로 추가:
+#
+# grad_students:
+#   - name: Hong Gildong
+#     position: Ph.D. Student (2026~)
+#     photo: /assets/img/people/gildong.jpg
+#     email: gildong@ssu.ac.kr
+#     interests: Generative design, metal AM

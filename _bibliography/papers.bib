@@ -1,0 +1,415 @@
+% -----------------------------------------------------------------------------
+% IDMM Lab — Publications
+% -----------------------------------------------------------------------------
+% Notes:
+% - Mirror this exact field set on every entry. al-folio's bib.liquid expects
+%   `html` and `abstract` to be present and non-empty; leaving them as empty
+%   strings ({}) breaks the build. Use a placeholder URL / blurb if real
+%   metadata is unavailable.
+% - `preview` accepts a URL (must contain "://") that renders as a thumbnail
+%   next to the entry. We use placehold.co with the journal abbreviation as
+%   a placeholder; replace with real journal cover images when available.
+% - `note` is rendered on its own line under the journal/year and is used
+%   here to surface impact-factor / JCR ranking info (and authorship notes
+%   like corresponding-author / equal-contribution where applicable).
+% - Mark the most representative work with selected={true} so it appears on
+%   the home page under "Selected Publications".
+% - Under-review manuscripts use year={2026} (so they sort to the top), an
+%   empty volume / pages, a red "Under Review" preview chip, and a note
+%   field that calls out the review status and collaboration / authorship
+%   context.
+% -----------------------------------------------------------------------------
+
+% ====== Under Review ========================================================
+
+@article{xue2026aeroplastic,
+  title     = {Aeroplastic design of turbine disks under transient thermal loads},
+  author    = {Wang, Shen and Xue, Ruixiao and Harduf, Yuval and Liao, Shuheng and Picard, Cyril and Lee, Kang-Hyun and Cordero, Zachary and Vermaak, Natasha},
+  journal   = {Aerospace Science and Technology},
+  year      = {2026},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  publisher = {},
+  doi       = {},
+  selected  = {false},
+  abbr      = {AeST},
+  html      = {https://www.sciencedirect.com/journal/aerospace-science-and-technology},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/B91C1C/FFFFFF.png?text=Under+Review},
+  note      = {<strong>Under Review</strong> &middot; MIT &ndash; Lehigh collaboration},
+  abstract  = {Aeroplastic design framework for turbine disks under transient thermal loads.}
+}
+
+@article{eftekhari2026fgmplate,
+  title     = {A unified physics-based framework for vibration prediction and design optimization of functionally graded trapezoidal thin plates},
+  author    = {Eftekhari, S. Ali and Lee, Kang-Hyun and Lim, Hyoung Jun},
+  journal   = {Composite Structures},
+  year      = {2026},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  publisher = {},
+  doi       = {},
+  selected  = {false},
+  abbr      = {Compos. Struct.},
+  html      = {https://www.sciencedirect.com/journal/composite-structures},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/B91C1C/FFFFFF.png?text=Under+Review},
+  note      = {<strong>Under Review</strong> &middot; Manuscript COMSTR-D-26-02046 &middot; Lee, K.-H. (corresponding author)},
+  abstract  = {Reduced-order modeling, sparse-sensor reconstruction, and physics-informed surrogate modeling for vibration prediction and design of functionally graded trapezoidal thin plates.}
+}
+
+@article{lee2026lpbfanisotropy,
+  title     = {Modeling the hierarchical microstructure of L-PBF Ti-6Al-4V: a multiphysics framework for texture-induced mechanical anisotropy},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Virtual and Physical Prototyping},
+  year      = {2026},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  publisher = {},
+  doi       = {},
+  selected  = {false},
+  abbr      = {VPP},
+  html      = {https://www.tandfonline.com/journals/nvpp20},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/B91C1C/FFFFFF.png?text=Under+Review},
+  note      = {<strong>Under Review</strong>},
+  abstract  = {Multiphysics framework for the hierarchical microstructure of L-PBF Ti-6Al-4V and the texture-induced mechanical anisotropy of as-built parts.}
+}
+
+% ====== Published ===========================================================
+
+@article{lee2026microlad,
+  title     = {MicroLad: 2D-to-3D microstructure reconstruction and generation via latent diffusion and score distillation},
+  author    = {Lee, Kang-Hyun and Ahmed, Faez},
+  journal   = {Computer Methods in Applied Mechanics and Engineering},
+  year      = {2026},
+  volume    = {449},
+  number    = {},
+  pages     = {118527},
+  publisher = {},
+  doi       = {10.1016/j.cma.2025.118527},
+  selected  = {true},
+  abbr      = {CMAME},
+  html      = {https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering},
+  pdf       = {},
+  preview   = {CMAME.jpg},
+  note      = {<strong>IF 7.3</strong> &middot; <strong>JCR Top 2.6%</strong> &middot; Mathematics &amp; Interdisciplinary Applications},
+  abstract  = {Latent-diffusion and score-distillation framework for 2D-to-3D microstructure reconstruction and generation.}
+}
+
+@article{lee2024denoising3d,
+  title     = {Denoising diffusion-based synthetic generation of three-dimensional anisotropic microstructures from two-dimensional micrographs},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Computer Methods in Applied Mechanics and Engineering},
+  year      = {2024},
+  volume    = {423},
+  number    = {},
+  pages     = {116876},
+  publisher = {},
+  doi       = {10.1016/j.cma.2024.116876},
+  selected  = {false},
+  abbr      = {CMAME},
+  html      = {https://www.sciencedirect.com/journal/computer-methods-in-applied-mechanics-and-engineering},
+  pdf       = {},
+  preview   = {CMAME.jpg},
+  note      = {<strong>IF 7.3</strong> &middot; <strong>JCR Top 2.6%</strong> &middot; Mathematics &amp; Interdisciplinary Applications},
+  abstract  = {Denoising diffusion model that synthesizes 3D anisotropic microstructures from 2D micrographs.}
+}
+
+@article{lee2024datadriven,
+  title     = {A data-driven framework for designing microstructure of multifunctional composites with deep-learned diffusion-based generative models},
+  author    = {Lee, Kang-Hyun and Lim, Hyoung Jun and Yun, Gun Jin},
+  journal   = {Engineering Applications of Artificial Intelligence},
+  year      = {2024},
+  volume    = {129},
+  number    = {},
+  pages     = {107590},
+  publisher = {},
+  doi       = {10.1016/j.engappai.2023.107590},
+  selected  = {true},
+  abbr      = {EAAI},
+  html      = {https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence},
+  pdf       = {},
+  preview   = {EAAI.jpg},
+  note      = {<strong>IF 7.5</strong> &middot; <strong>JCR Top 2.5%</strong> &middot; Engineering &amp; Multidisciplinary},
+  abstract  = {Diffusion-based generative framework for designing multifunctional composite microstructures.}
+}
+
+@article{lee2024multiplane,
+  title     = {Multi-plane denoising diffusion-based dimensionality expansion for 2D-to-3D reconstruction of microstructures with harmonized sampling},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {npj Computational Materials},
+  year      = {2024},
+  volume    = {10},
+  number    = {1},
+  pages     = {99},
+  publisher = {},
+  doi       = {10.1038/s41524-024-01280-z},
+  selected  = {true},
+  abbr      = {npj CM},
+  html      = {https://www.nature.com/npjcompumats/},
+  pdf       = {},
+  preview   = {npjCM.jpg},
+  note      = {<strong>IF 11.9</strong>},
+  abstract  = {Multi-plane diffusion approach for 2D-to-3D microstructure reconstruction with harmonized sampling.}
+}
+
+@article{lee2023defect,
+  title     = {A defect detection framework using three-dimensional convolutional neural network with in-situ monitoring data in laser powder bed fusion process},
+  author    = {Lee, Kang-Hyun and Lee, Hyung Wook and Yun, Gun Jin},
+  journal   = {Optics and Laser Technology},
+  year      = {2023},
+  volume    = {165},
+  number    = {},
+  pages     = {109571},
+  publisher = {},
+  doi       = {10.1016/j.optlastec.2023.109571},
+  selected  = {false},
+  abbr      = {OLT},
+  html      = {https://www.sciencedirect.com/journal/optics-and-laser-technology},
+  pdf       = {},
+  preview   = {OLT.jpg},
+  note      = {<strong>IF 4.6</strong> &middot; <strong>JCR Top 17.2%</strong> &middot; Optics},
+  abstract  = {3D-CNN defect detection using in-situ monitoring data from laser powder bed fusion.}
+}
+
+@article{lee2022support,
+  title     = {Design optimization of thermally conductive support structure for laser powder-bed fusion process with part-scale thermal history},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Additive Manufacturing},
+  year      = {2022},
+  volume    = {51},
+  number    = {},
+  pages     = {102627},
+  publisher = {},
+  doi       = {10.1016/j.addma.2022.102627},
+  selected  = {false},
+  abbr      = {Addit. Manuf.},
+  html      = {https://www.sciencedirect.com/journal/additive-manufacturing},
+  pdf       = {},
+  preview   = {AdditManuf.jpg},
+  note      = {<strong>IF 11.0</strong> &middot; <strong>JCR Top 9%</strong> &middot; Engineering &amp; Manufacturing},
+  abstract  = {Design optimization of thermally conductive supports for laser powder-bed fusion using part-scale thermal history.}
+}
+
+@article{lee2020heatsource,
+  title     = {A novel heat source model for analysis of melt pool evolution in selective laser melting process},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Additive Manufacturing},
+  year      = {2020},
+  volume    = {36},
+  number    = {},
+  pages     = {101497},
+  publisher = {},
+  doi       = {10.1016/j.addma.2020.101497},
+  selected  = {false},
+  abbr      = {Addit. Manuf.},
+  html      = {https://www.sciencedirect.com/journal/additive-manufacturing},
+  pdf       = {},
+  preview   = {AdditManuf.jpg},
+  note      = {<strong>IF 10.998</strong> &middot; <strong>JCR Top 1%</strong> &middot; Engineering &amp; Manufacturing},
+  abstract  = {Heat source model for melt pool evolution in selective laser melting.}
+}
+
+@article{jang2026cement,
+  title     = {Enhanced lightweight, moisture-resistant, and thermoelectric cement composites using carbon nanotube and hollow glass microsphere-based hybrid clusters},
+  author    = {Jang, Daeik and Choi, Jaewoong and Bang, Jinho and Ham, Sang-Pil and Lee, Kang-Hyun and Yang, Beomjoo},
+  journal   = {Advanced Composites and Hybrid Materials},
+  year      = {2026},
+  volume    = {},
+  number    = {},
+  pages     = {},
+  publisher = {},
+  doi       = {10.1007/s42114-025-01581-x},
+  selected  = {true},
+  abbr      = {ACHM},
+  html      = {https://link.springer.com/journal/42114},
+  pdf       = {},
+  preview   = {ACHM.jpg},
+  note      = {<strong>IF 21.8</strong> &middot; <strong>JCR Top 1.5%</strong> &middot; Materials Science &amp; Composites &middot; Lee, K.-H. (corresponding author)},
+  abstract  = {Cement composites enhanced with carbon nanotube and hollow glass microsphere hybrid clusters.}
+}
+
+@article{lee2024xgbheat,
+  title     = {Extreme gradient boosting-based multiscale heat source modeling for analysis of solid-state phase transformation in additive manufacturing of Ti-6Al-4V},
+  author    = {Lee, Yun-Sik and Lee, Kang-Hyun and Chung, Min-Gyu and Yun, Gun Jin},
+  journal   = {Journal of Manufacturing Processes},
+  year      = {2024},
+  volume    = {113},
+  number    = {},
+  pages     = {319--345},
+  publisher = {},
+  doi       = {10.1016/j.jmapro.2024.01.044},
+  selected  = {false},
+  abbr      = {JMP},
+  html      = {https://www.sciencedirect.com/journal/journal-of-manufacturing-processes},
+  pdf       = {},
+  preview   = {JMP.jpg},
+  abstract  = {XGBoost-based multiscale heat source modeling for solid-state phase transformation in Ti-6Al-4V AM.}
+}
+
+@article{park2025probabilistic,
+  title     = {An integrated framework for deriving a probabilistic process window for the laser powder bed fusion of 25CrMo4 via uncertainty quantification},
+  author    = {Park, Jeong-Eun and Lee, Kang-Hyun and Kim, Su-Jin and Cheol, Yoon and Yun, Gun Jin},
+  journal   = {Journal of Manufacturing Processes},
+  year      = {2025},
+  volume    = {155},
+  number    = {},
+  pages     = {1278--1291},
+  publisher = {},
+  doi       = {10.1016/j.jmapro.2025.10.051},
+  selected  = {false},
+  abbr      = {JMP},
+  html      = {https://www.sciencedirect.com/journal/journal-of-manufacturing-processes},
+  pdf       = {},
+  preview   = {JMP.jpg},
+  abstract  = {Probabilistic process-window framework for laser powder bed fusion of 25CrMo4 via uncertainty quantification.}
+}
+
+@article{backiyaleela2025dft,
+  title     = {DFT and machine learning insights on the orbital dependence of single-metal sites on coordination environment for lithium-sulfur batteries},
+  author    = {Backiyaleela, S. S. V. and Anand, R. and Lee, Kang-Hyun and Mithra, K. M. and Yun, Gun Jin and Kim, H. and Sinthika, S.},
+  journal   = {Journal of Energy Storage},
+  year      = {2025},
+  volume    = {134},
+  number    = {},
+  pages     = {118063},
+  publisher = {},
+  doi       = {10.1016/j.est.2025.118063},
+  selected  = {false},
+  abbr      = {J. Energy Storage},
+  html      = {https://www.sciencedirect.com/journal/journal-of-energy-storage},
+  pdf       = {},
+  preview   = {JEnergyStorage.jpg},
+  abstract  = {DFT and ML study of orbital dependence of single-metal sites for lithium-sulfur batteries.}
+}
+
+@article{lee2024microreconstruct,
+  title     = {Microstructure reconstruction using diffusion-based generative models},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Mechanics of Advanced Materials and Structures},
+  year      = {2024},
+  volume    = {31},
+  number    = {18},
+  pages     = {4443--4461},
+  publisher = {},
+  doi       = {10.1080/15376494.2023.2198528},
+  selected  = {false},
+  abbr      = {MAMS},
+  html      = {https://www.tandfonline.com/journals/umcm20},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=MAMS},
+  abstract  = {Diffusion-based generative models for microstructure reconstruction.}
+}
+
+@article{lee2021phasefield,
+  title     = {Prediction of melt pool dimension and residual stress evolution with thermodynamically-consistent phase field and consolidation models during re-melting process of SLM},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Computers, Materials and Continua},
+  year      = {2021},
+  volume    = {66},
+  number    = {1},
+  pages     = {87--112},
+  publisher = {},
+  doi       = {10.32604/cmc.2020.012688},
+  selected  = {false},
+  abbr      = {CMC},
+  html      = {https://www.techscience.com/cmc},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=CMC},
+  abstract  = {Phase-field and consolidation modeling of melt pool and residual stress in SLM re-melting.}
+}
+
+@article{lee2021tempthread,
+  title     = {Temperature thread multiscale finite element simulation of selective laser melting for the evaluation of process},
+  author    = {Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Advances in Aircraft and Spacecraft Science},
+  year      = {2021},
+  volume    = {8},
+  number    = {1},
+  pages     = {31--51},
+  publisher = {},
+  doi       = {10.12989/aas.2021.8.1.031},
+  selected  = {false},
+  abbr      = {AASS},
+  html      = {http://www.techno-press.org/?journal=aas},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=AASS},
+  abstract  = {Temperature-thread multiscale FE simulation framework for selective laser melting.}
+}
+
+@article{you2023gdl,
+  title     = {Performance-based design of 2D gas diffusion layer microstructure using denoising diffusion probabilistic model},
+  author    = {You, Hyungseok and Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Mechanics of Advanced Materials and Structures},
+  year      = {2023},
+  volume    = {31},
+  number    = {28},
+  pages     = {10240--10252},
+  publisher = {},
+  doi       = {10.1080/15376494.2023.2286629},
+  selected  = {false},
+  abbr      = {MAMS},
+  html      = {https://www.tandfonline.com/journals/umcm20},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=MAMS},
+  note      = {Lee, K.-H. (equal contribution)},
+  abstract  = {Denoising diffusion probabilistic model for performance-based design of 2D gas diffusion layers.}
+}
+
+@article{lee2019coupling,
+  title     = {Design of a stiffness variable flexible coupling using magnetorheological elastomer for torsional vibration reduction},
+  author    = {Lee, Kang-Hyun and Park, Jeong-Eun and Kim, Yong-Kuk},
+  journal   = {Journal of Intelligent Material Systems and Structures},
+  year      = {2019},
+  volume    = {30},
+  number    = {15},
+  pages     = {2212--2221},
+  publisher = {},
+  doi       = {10.1177/1045389X19862378},
+  selected  = {false},
+  abbr      = {JIMSS},
+  html      = {https://journals.sagepub.com/home/jim},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=JIMSS},
+  abstract  = {MR-elastomer-based variable-stiffness flexible coupling for torsional vibration reduction.}
+}
+
+@article{park2021ablative,
+  title     = {Computational ablative thermal response analysis of carbon and phenolic composites for thermal protection system},
+  author    = {Park, Taehwan and Lee, Kang-Hyun and Yun, Gun Jin},
+  journal   = {Advances in Aircraft and Spacecraft Science},
+  year      = {2021},
+  volume    = {8},
+  number    = {3},
+  pages     = {251--271},
+  publisher = {},
+  doi       = {10.12989/aas.2021.8.3.251},
+  selected  = {false},
+  abbr      = {AASS},
+  html      = {http://www.techno-press.org/?journal=aas},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=AASS},
+  abstract  = {Computational ablative thermal response analysis of carbon and phenolic composites.}
+}
+
+@article{chung2025ded,
+  title     = {A fully computational approach for the prediction of melt pool generation of the directed energy deposition process},
+  author    = {Chung, Min-Gyu and Lee, Kang-Hyun and Park, Jeong-Eun and Sun, Yong and Yun, Gun Jin},
+  journal   = {Journal of Mechanical Science and Technology},
+  year      = {2025},
+  volume    = {},
+  number    = {},
+  pages     = {1--16},
+  publisher = {},
+  doi       = {10.1007/s12206-025-1029-0},
+  selected  = {false},
+  abbr      = {JMST},
+  html      = {https://link.springer.com/journal/12206},
+  pdf       = {},
+  preview   = {https://placehold.co/300x300/1E3A8A/FFFFFF.png?text=JMST},
+  abstract  = {Fully computational prediction of melt pool generation in directed energy deposition.}
+}

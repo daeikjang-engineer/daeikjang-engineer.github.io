@@ -1,0 +1,295 @@
+// -----------------------------------------------------------------------------
+// IDMM Lab — Theme color customization
+// Navy accent (#1E3A8A) on white background. Hex values are inlined into CSS
+// variables so this file does not need to import any SCSS variables from
+// _variables.scss.
+// -----------------------------------------------------------------------------
+
+:root {
+  color-scheme: light;
+
+  --global-bg-color:            #ffffff;
+  --global-code-bg-color:       #f5f6f7;
+  --global-text-color:          #1F2937;
+  --global-text-color-light:    #6B7280;
+  --global-theme-color:         #1E3A8A;
+  --global-hover-color:         #1E40AF;
+  --global-hover-text-color:    #ffffff;
+  --global-footer-bg-color:     #111827;
+  --global-footer-text-color:   #9CA3AF;
+  --global-footer-link-color:   #ffffff;
+  --global-distill-app-color:   #828282;
+  --global-divider-color:       rgba(0, 0, 0, 0.1);
+  --global-card-bg-color:       #ffffff;
+  --global-highlight-color:     #1E3A8A;
+  --global-back-to-top-bg-color:   rgba(0, 0, 0, 0.4);
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color:    #ffffff;
+  --global-newsletter-text-color:  #000000;
+
+  // Navbar-specific tokens. Kept separate from --global-bg-color /
+  // --global-text-color so the navbar can be navy with white text without
+  // affecting the page body.
+  --global-navbar-bg-color:     #0B1F4D;
+  --global-navbar-text-color:   #ffffff;
+  --global-navbar-hover-color:  #BFDBFE;
+  --global-navbar-active-color: #ffffff;
+
+  --global-tip-block:          #42b983;
+  --global-tip-block-bg:       #dbf5e9;
+  --global-tip-block-text:     #215d42;
+  --global-tip-block-title:    #215d42;
+  --global-warning-block:      #e7c000;
+  --global-warning-block-bg:   #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title:#6b5900;
+  --global-danger-block:       #c00;
+  --global-danger-block-bg:    #f8d7da;
+  --global-danger-block-text:  #721c24;
+  --global-danger-block-title: #721c24;
+
+  .fa-sun  { display: none; }
+  .fa-moon { padding-left: 10px; padding-top: 12px; display: block; }
+  .repo-img-light  { display: block; }
+  .repo-img-dark   { display: none;  }
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --global-bg-color:            #0F172A;
+  --global-code-bg-color:       #2c3237;
+  --global-text-color:          #E5E7EB;
+  --global-text-color-light:    #9CA3AF;
+  --global-theme-color:         #93C5FD;
+  --global-hover-color:         #BFDBFE;
+  --global-hover-text-color:    #0F172A;
+  --global-footer-bg-color:     #424246;
+  --global-footer-text-color:   #e8e8e8;
+  --global-footer-link-color:   #ffffff;
+  --global-distill-app-color:   #e8e8e8;
+  --global-divider-color:       #424246;
+  --global-card-bg-color:       #1E293B;
+  --global-back-to-top-bg-color:   rgba(255, 255, 255, .5);
+  --global-back-to-top-text-color: #ffffff;
+  --global-newsletter-bg-color:    #424246;
+  --global-newsletter-text-color:  #ffffff;
+
+  --global-navbar-bg-color:     #050E2E;
+  --global-navbar-text-color:   #ffffff;
+  --global-navbar-hover-color:  #93C5FD;
+  --global-navbar-active-color: #ffffff;
+
+  --global-tip-block:          #42b983;
+  --global-tip-block-bg:       #e2f5ec;
+  --global-tip-block-text:     #215d42;
+  --global-tip-block-title:    #215d42;
+  --global-warning-block:      #e7c000;
+  --global-warning-block-bg:   #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title:#6b5900;
+  --global-danger-block:       #c00;
+  --global-danger-block-bg:    #f8d7da;
+  --global-danger-block-text:  #721c24;
+  --global-danger-block-title: #721c24;
+
+  .fa-sun  { padding-left: 10px; padding-top: 12px; display: block; }
+  .fa-moon { display: none; }
+  .repo-img-light  { display: none;  }
+  .repo-img-dark   { display: block; }
+}
+
+// -----------------------------------------------------------------------------
+// Navbar overrides — al-folio's _navbar.scss colors the navbar with
+// --global-bg-color / --global-text-color (matching the page body). For the
+// IDMM Lab brand we want a navy navbar with WHITE text in every state and in
+// both light and dark themes. The rules below force white with !important so
+// nothing in al-folio's stack can re-color them. The hover variant uses a
+// pale-blue tint for affordance only.
+// -----------------------------------------------------------------------------
+
+.navbar {
+  background-color: var(--global-navbar-bg-color) !important;
+  border-bottom: none !important;
+  opacity: 1 !important;
+}
+
+// All navbar text — brand, nav links, dropdown toggles — is white in every
+// state. Apply broadly via descendant selectors and !important so theme
+// toggles and active states cannot drop the contrast.
+.navbar,
+.navbar.navbar-light {
+  .navbar-brand,
+  .navbar-brand a,
+  .navbar-nav .nav-item .nav-link,
+  .navbar-nav .nav-item.active > .nav-link,
+  .navbar-nav .nav-item .nav-link.dropdown-toggle,
+  #light-toggle,
+  #light-toggle .nav-link,
+  #search-toggle,
+  #search-toggle .nav-link {
+    color: var(--global-navbar-text-color) !important;
+  }
+
+  .navbar-brand:hover,
+  .navbar-brand a:hover,
+  .navbar-nav .nav-item .nav-link:hover,
+  .navbar-nav .nav-item.active > .nav-link:hover,
+  #light-toggle:hover,
+  #search-toggle:hover {
+    color: var(--global-navbar-hover-color) !important;
+  }
+}
+
+.navbar-toggler .icon-bar {
+  background-color: var(--global-navbar-text-color) !important;
+}
+
+// Hide the dark-mode toggle (sun/moon icon) without disabling
+// site.enable_darkmode at the config level. Setting that flag to false
+// caused build failures in al-folio's stack, so we keep the toggle
+// element in the DOM and just hide it visually. The site falls back to
+// the "light" default set in assets/js/theme.js because no localStorage
+// theme is selected.
+#light-toggle,
+.toggle-container {
+  display: none !important;
+}
+
+// IDMM Lab logo on the navbar (white-on-navy). Always visible, including
+// on the home page. The image lives in assets/img/IDMM_logo_white.png.
+.navbar .idmm-brand {
+  padding: 0.25rem 0;
+  margin-right: 1rem;
+}
+
+.navbar .idmm-logo {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+// Home hero banner shown full-width at the top of the home page body in
+// place of the old text title / subtitle / corner logo. Pull the image
+// up against the navbar by zeroing the body's normal top spacing on the
+// home page only, so there is no visible gap between the navy navbar
+// and the figure.
+.home-hero-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 1.5rem 0;
+  border-radius: 6px;
+}
+
+body.layout-about .post,
+.post:has(> article > .home-hero-banner) {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.home-hero-banner {
+  margin-top: 0 !important;
+}
+
+// Research thrust card header — tighten the colored band so it scales
+// with the title text instead of forcing a tall 200px gradient block.
+.thrust-card .thrust-card-img {
+  height: auto !important;
+  min-height: 0 !important;
+  padding: 1rem 1.25rem;
+}
+
+.thrust-card .thrust-card-img h3 {
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.thrust-card .thrust-card-img small {
+  font-size: 0.75rem;
+}
+
+// Image rendered inside the expanded "Show details" pane on Research
+// thrust cards. Fill the card body width fully (the body's own padding
+// keeps it from touching the card edge).
+.thrust-detail-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 1rem auto;
+  border-radius: 4px;
+}
+
+// Allow the Thrust 1 image to extend past the card body's padding
+// without being clipped by Bootstrap's default overflow:hidden on the
+// card.
+.thrust-card,
+.thrust-card .card-body,
+.thrust-card .collapse {
+  overflow: visible !important;
+}
+
+// Thrust 1 (Generative AI for Design) — render the figure smaller
+// than the card body width, keeping its natural aspect ratio (no
+// min-height, no object-fit cropping). Centered.
+#thrust1-detail .thrust-detail-img {
+  width: calc(100% + 2rem);
+  max-width: calc(100% + 2rem);
+  height: auto;
+  margin: 0 -1rem 1rem -1rem;
+  object-fit: initial;
+  border-radius: 4px;
+}
+
+@media (max-width: 575px) {
+  #thrust1-detail .thrust-detail-img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+// Publications page preview thumbnails — al-folio renders the image
+// at the BibTeX `preview` URL inside the `.col.abbr` cell, directly
+// under the journal-abbreviation badge. Match the image width to the
+// badge above it (full column width, w-100) and keep the aspect ratio
+// square so the thumbnail reads as a uniform tile.
+.publications .preview,
+.col.abbr .preview {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+}
+
+// Team page sub-tab navigation (Advisor / Students / Alumni). Keep the
+// tabs subtle so they read as section dividers rather than a primary
+// nav element.
+.team-tabs.nav-tabs {
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-bottom: 1.5rem;
+}
+
+.team-tabs .nav-link {
+  color: var(--global-text-color-light);
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.6rem 1rem;
+  font-weight: 500;
+}
+
+.team-tabs .nav-link:hover {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-divider-color);
+  background-color: transparent;
+}
+
+.team-tabs .nav-link.active {
+  color: var(--global-theme-color);
+  border-bottom-color: var(--global-theme-color);
+  background-color: transparent;
+}
