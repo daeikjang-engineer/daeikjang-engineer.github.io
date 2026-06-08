@@ -17,13 +17,13 @@ latest_posts:
   enabled: false
 ---
 
-<img src="{{ '/assets/img/Homepage_figure_re.png' | relative_url }}" alt="IDMM Lab" class="home-hero-banner">
+<img src="{{ '/assets/img/Homepage_figure_re.jpg' | relative_url }}" alt="sss Lab" class="home-hero-banner">
 
 **Generative AI** · **Multiphysics Modeling** · **Digital Twins** · **Design Automation** · **Advanced Manufacturing**
 
-**생성형 인공지능** · **멀티피직스 모델링** · **디지털 트윈** · **설계 자동화** · **첨단제조**
+**생성형 인공지능** · **멀티피직스 모델링** · **디지털 트윈** · **발열 시멘트** · **스마트 재료**
 
-The **Intelligent Design for Materials & Manufacturing (IDMM) Lab** (지능형 소재 및 제조 설계 연구실) at Soongsil University builds computational methods that connect generative AI, multiphysics modeling, and digital engineering. We design materials, parts, and manufacturing processes that are difficult to design by hand — and we build the digital infrastructure that makes those methods reusable across problems.
+The **smart infrastructure technology Dr.Jang's Lab** (장대익왕국) at 세종 University builds computational methods that connect generative AI, multiphysics modeling, and digital engineering. We design materials, parts, and manufacturing processes that are difficult to design by hand — and we build the digital infrastructure that makes those methods reusable across problems.
 
 Our work cuts across three thrusts — **Generative AI for Design**, **Multiphysics & Multiscale Modeling**, and **Digital Engineering for Advanced Manufacturing** — with an application focus on metal additive manufacturing, lightweight structural components, and mechanical metamaterials. See the [Research]({{ '/research/' | relative_url }}) page for details, and [Publications]({{ '/publications/' | relative_url }}) for our recent work.
 
@@ -37,4 +37,4 @@ We are recruiting **postdoctoral researchers**, **graduate students (M.S. / Ph.D
 
 ---
 
-<small>숭실대학교 기계공학과 IDMM 연구실은 생성형 AI, 멀티피직스 모델링, 디지털 엔지니어링을 결합하여 재료·부품·첨단 제조 시스템을 설계하는 계산 방법론을 연구합니다. 박사후연구원, 석·박사 과정생, 학부 인턴을 모집하고 있습니다 — 자세한 사항은 <a href="{{ '/join/' | relative_url }}">Join Us</a> 페이지를 참고해 주세요.</small>
+<small>세종대학교 장대익교수님 연구실은 생성형 AI, 멀티피직스 모델링, 디지털 엔지니어링을 결합하여 재료·부품·첨단 제조 시스템을 설계하는 계산 방법론을 연구합니다. 박사후연구원, 석·박사 과정생, 학부 인턴을 모집하고 있습니다 — 자세한 사항은 <a href="{{ '/join/' | relative_url }}">Join Us</a> 페이지를 참고해 주세요.</small>

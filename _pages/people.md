@@ -2,7 +2,7 @@
 layout: page
 permalink: /team/
 title: Team
-description: Members of the IDMM Lab (지능형 소재 및 제조 설계 연구실).
+description: Members of the SS Lab(장대익왕국).
 nav: true
 nav_order: 2
 ---
@@ -27,31 +27,31 @@ nav_order: 2
         {%
           include figure.liquid
           loading="eager"
-          path="assets/img/members/PI_Kanghyun.png"
+          path="assets/img/members/yongjun.jpg"
           class="img-fluid rounded"
           alt="Kang-Hyun Lee"
           cache_bust=true
         %}
       </div>
       <div class="col-sm-9">
-        <h3 style="margin-top: 0;">Kang-Hyun Lee, Ph.D.</h3>
-        <p>Assistant Professor, School of Mechanical Engineering, Soongsil University</p>
+        <h3 style="margin-top: 0;">Daeik Jang, Ph.D.</h3>
+        <p>Assistant Professor, Civil and Environmental Engineering, 세종 University</p>
         <p>
-          📧 <a href="mailto:kanghl@ssu.ac.kr">kanghl@ssu.ac.kr</a>
+          📧 <a href="mailto:@ssu.ac.kr">ㅈㄷㅇ교수이메일@ssu.ac.kr</a>
           &nbsp;·&nbsp;
-          <a href="https://www.linkedin.com/in/kang-hyun-lee-125b17206/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </p>
         <p>
-          Kang-Hyun Lee is an Assistant Professor in the School of Mechanical
-          Engineering at Soongsil University. Prior to joining Soongsil University,
+          장대익 is an Assistant Professor in the School of Mechanical
+          Engineering at 세종 University. Prior to joining 세종 University,
           he worked as a Postdoctoral Associate in the
-          <a href="https://decode.mit.edu/" target="_blank" rel="noopener">DeCoDE Lab</a>
-          in the Department of Mechanical Engineering at the Massachusetts
-          Institute of Technology, where he contributed to a DARPA-funded research
+          <a href="h" target="_blank" rel="noopener">SITL lab</a>
+          in the Department of Mechanical Engineering at the University of Texas
+          at arlington, where he Tx DOT (Texas department of Transportation)
           project on developing generative artificial intelligence for the design
           and manufacturing of reusable rocket components. He received his Ph.D. and
-          M.S. from the Department of Aerospace Engineering at Seoul National
-          University, with a research focus on multiphysics and multiscale
+          M.S. KAIST-Korea Advanced Institutes of Technology
+          , with a research focus on multiphysics and multiscale
           simulation of additive manufacturing processes. His current research lies
           at the intersection of generative design and advanced manufacturing,
           aiming to unlock the full potential of manufacturing processes and expand
@@ -63,10 +63,9 @@ nav_order: 2
     <h4 id="invited-talks">Invited Talks</h4>
 
     <ol>
-      <li><strong>Invited Presentation</strong>, Materials Research Society (MRS) Fall Meeting, 2025. <em>Multiobjective Inverse Design of Compositionally Graded Blisks for Reusable Turbomachinery Using Physics-Guided Diffusion Models.</em></li>
-      <li><strong>Invited Seminar</strong>, U.S. Air Force Research Laboratory (AFRL), Materials and Manufacturing Directorate (RX Division), 2025. <em>Exploring Microstructure Design Spaces with Denoising Diffusion Models.</em></li>
-      <li><strong>Invited Talk</strong> (Early Career Researcher), Korean Society for Aeronautical and Space Sciences (KSAS) Workshop, 2025. <em>Multiphysics Modeling for PSP Linkages in Metal Additive Manufacturing.</em></li>
-      <li><strong>Invited Talk</strong>, Korea Institute of Machinery and Materials (KIMM), Department of 3D Printing, 2024. <em>Multiscale and Multiphysics Simulation of Metal Additive Manufacturing Process.</em></li>
+      <li><strong>Invited Presentation</strong>, Materials Research Society (MRS) Fall Musion Models.</em></li>
+      <li><strong>Invited Seminar</strong>, U.S. Air Force  Microstructure Design Spaces with Denoising Diffusion Models.</em></li>
+
     </ol>
 
     <h4 id="reviewer-academic-journals">Reviewer for Academic Journals</h4>
