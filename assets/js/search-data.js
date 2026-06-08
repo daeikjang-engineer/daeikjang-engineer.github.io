@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-team",
           title: "Team",
-          description: "Members of the IDMM Lab (지능형 소재 및 제조 설계 연구실).",
+          description: "Members of the SS Lab(장대익왕국).",
           section: "Navigation",
           handler: () => {
             window.location.href = "/team/";
